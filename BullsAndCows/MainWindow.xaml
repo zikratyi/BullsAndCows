@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BullsAndCows"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Bulls and Cows" Height="410" Width="410">
+    <Grid Margin="-14,5,-17,0" HorizontalAlignment="Right" Width="433" Height="363" VerticalAlignment="Top">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="143" Margin="23,162,0,0" VerticalAlignment="Top" Width="189" Background="Azure" Grid.RowSpan="2"/>
+        <Label x:Name="labelMustery" Content="Mustery" HorizontalAlignment="Left" Margin="44,38,0,0" VerticalAlignment="Top" Width="89" Height="25"/>
+        <TextBox x:Name="textBoxMustery" HorizontalAlignment="Left" Height="31" Margin="135,35,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="59" RenderTransformOrigin="-0.712,0.548" TextAlignment="Center" FontSize="14" IsReadOnly="True"/>
+        <Label x:Name="labelAnswer" Content="Answer" HorizontalAlignment="Left" Height="25" Margin="44,85,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="textBoxAnswer" HorizontalAlignment="Left" Height="32" VerticalContentAlignment="Center" Margin="134,0,0,251" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="60" FontSize="14" TextAlignment="Center"/>
+        <Label x:Name="labelBulls" Content="Bulls" HorizontalAlignment="Left" Height="25" Margin="44,178,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="textBoxBulls" HorizontalAlignment="Left" Margin="136,0,0,158" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="59" RenderTransformOrigin="-0.525,0.258" Height="31" VerticalAlignment="Bottom" IsReadOnly="True" TextAlignment="Center"/>
+        <Label x:Name="labelCows" Content="Cows" HorizontalAlignment="Left" Height="25" Margin="44,222,0,0" VerticalAlignment="Top" Width="89" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBoxCows" HorizontalAlignment="Left" Margin="136,218,0,0" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="59" RenderTransformOrigin="-0.678,0.387" Height="31" VerticalAlignment="Top" IsReadOnly="True" TextAlignment="Center"/>
+        <Label x:Name="labelMoves" Content="Moves" HorizontalAlignment="Left" Height="25" Margin="42,265,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="textBoxMoves" HorizontalAlignment="Left" Height="31" VerticalContentAlignment="Center" Margin="135,263,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="59" IsReadOnly="True" TextAlignment="Center"/>
+        <Label x:Name="labelHint" Content="Hint" HorizontalAlignment="Left" Height="31" Margin="28,148,0,0" VerticalAlignment="Top" Width="48" Background="White"/>
+        <Button x:Name="buttonGo" Content="Go" HorizontalAlignment="Right" Height="25" Margin="0,320,296,0" VerticalAlignment="Top" Width="102" Click="buttonGo_Click"/>
+        <Button x:Name="buttonNext" Content="Next" HorizontalAlignment="Left" Height="25" Margin="289,320,0,0" VerticalAlignment="Top" Width="102" Click="buttonNext_Click"/>
+        <TextBlock x:Name="textBlockLog" HorizontalAlignment="Left" Margin="248,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="286" Width="157" Background="Azure"/>
+
     </Grid>
 </Window>
